@@ -5,62 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login - Garden of Pashmina</title>
+    <style>
+        /* STYLING THE LOGIN PAGE */
+        #login-page-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 400px;
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+            margin-top: 50px; /* Added margin-top to separate from the navbar */
+            text-align: center; /* Center the content horizontally */
+            max-height: 100vh; /* Set a maximum height for the container */
+        }
 
+        #login-page-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        #login-page-container form {
+            margin-top: 10px;
+        }
+
+        #login-page-container label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        #login-page-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        #login-page-container .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            white-space: nowrap; /* Keep the text on the same line */
+        }
+
+        #login-page-container .remember-me label {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+
+        #login-page-container .login-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #login-page-container .signup-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        #login-page-container .signup-link p {
+            margin: 0; /* Remove default paragraph margin */
+        }
+
+        #login-page-container .signup-link a {
+            color: #2196f3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #login-page-container .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <img src="./images/logo.JPG" alt="Garden of Pashmina Logo">
-        </div>
-        <div id="title">
-            <h1>Garden of Pashmina</h1>
-        </div>
-        <div id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
-            </ul>
-        </div>
-        <div id="user-actions">
-            <button onclick="location.href='login.html'">Login</button>
-            <button onclick="location.href='signup.html'">Signup</button>
-            <button onclick="showCart()">Cart</button>
-            <input type="text" id="search" placeholder="Search">
-            <button onclick="search()">Search</button>
-        </div>
-    </header>
 
-    <main id="login">
-        <div class="login-container">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-        
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-        
-                <div class="remember-me">
-                    <input type="checkbox" id="rememberMe" name="rememberMe">
-                    <label for="rememberMe">Remember me?</label>
-                </div>
-        
-                <button type="button" class="login-button" onclick="login()">Login</button>
-            </form>
-        
-            <div class="signup-link">
-                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+<header>
+    <div id="logo">
+        <img src="./images/logo.JPG" alt="Garden of Pashmina Logo">
+    </div>
+    <div id="title">
+        <h1>Garden of Pashmina</h1>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </div>
+    <div id="user-actions">
+        <button onclick="location.href='login.html'">Login</button>
+        <button onclick="location.href='signup.html'">Signup</button>
+        <button onclick="showCart()">Cart</button>
+        <input type="text" id="search" placeholder="Search">
+        <button onclick="search()">Search</button>
+    </div>
+</header>
+
+<main id="login">
+    <div id="login-page-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember me?</label>
             </div>
+
+            <button type="button" class="login-button" onclick="login()">Login</button>
+        </form>
+
+        <div class="signup-link">
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
         </div>
-    </main>
+    </div>
+</main>
 
-    <div id="login-modal"></div>
-    <div id="signup-modal"></div>
-    <div id="cart-modal"></div>
+<div id="login-modal"></div>
+<div id="signup-modal"></div>
+<div id="cart-modal"></div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+
 
 
