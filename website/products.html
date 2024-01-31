@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Garden of Pashmina</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./images/logo.JPG" alt="Garden of Pashmina Logo">
+        </div>
+        <div id="title">
+            <h1>Garden of Pashmina</h1>
+        </div>
+        <div id="navbar">
+            <ul>
+                <button onclick="location.href='index.php'">Home</button>
+                <button onclick="location.href='about.html'">About</button>
+                <button onclick="location.href='products.html'">Products</button>
+            </ul>
+        </div>
+        <div id="user-actions">
+            <!-- Replace text with icons using Unicode characters -->
+            <button onclick="location.href='./template/login.php'">&#128100;</button> <!-- User icon -->
+            <button onclick="location.href='./template/signup.php'">&#128101;</button> <!-- User plus icon -->
+            <button onclick="showCart()">&#128722;</button> <!-- Shopping cart icon -->
+            <input type="text" id="search" placeholder="Search">
+            <button onclick="search()">&#128269;</button> <!-- Search icon -->
+        </div>
+    </header>
+
+    <main id="products">
+            <!-- Product headings -->
+            <div class="product-headings">
+                <h2>Pashmina Products</h2>
+            </div>
+    
+            <!-- Grid of products -->
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="./images/product1.jpg" alt="Product 1">
+                    <h3>Pashmina Cap</h3>
+                    <p>Price: $20.99</p>
+                    <button onclick="addToCart(1)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="./images/product2.jpg" alt="Product 2">
+                    <h3>Pashmina Sweater</h3>
+                    <p>Price: $49.99</p>
+                    <button onclick="addToCart(2)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 3 -->
+                <div class="product">
+                    <img src="./images/product3.jpg" alt="Product 3">
+                    <h3>Pashmina Poncho</h3>
+                    <p>Price: $39.99</p>
+                    <button onclick="addToCart(3)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 4 -->
+                <div class="product">
+                    <img src="./images/product4.jpg" alt="Product 4">
+                    <h3>Pashmina Floral Shawl</h3>
+                    <p>Price: $35.99</p>
+                    <button onclick="addToCart(4)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 5 -->
+                <div class="product">
+                    <img src="./images/product5.jpg" alt="Product 5">
+                    <h3>Pashmina-Wool Cap</h3>
+                    <p>Price: $24.99</p>
+                    <button onclick="addToCart(5)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 6-->
+                <div class="product">
+                    <img src="./images/product6.jpg" alt="Product 6">
+                    <h3>Silk-blend Pashmina Shawl</h3>
+                    <p>Price: $40.99</p>
+                    <button onclick="addToCart(6)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 7 -->
+                <div class="product">
+                    <img src="./images/product7.jpg" alt="Product 7">
+                    <h3>Pashmina Shawl with Laces</h3>
+                    <p>Price: $38.99</p>
+                    <button onclick="addToCart(7)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 8 -->
+                <div class="product">
+                    <img src="./images/product8.jpg" alt="Product 8">
+                    <h3>Pashmina Poncho with Boho Vibes</h3>
+                    <p>Price: $19.99</p>
+                    <button onclick="addToCart(8)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 9 -->
+                <div class="product">
+                    <img src="./images/product9.jpg" alt="Product 9">
+                    <h3>Pashmina Lace Wraps</h3>
+                    <p>Price: $9.99</p>
+                    <button onclick="addToCart(9)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 10 -->
+                <div class="product">
+                    <img src="./images/product10.jpg" alt="Product 10">
+                    <h3>Silk-blend Floral Pashmina Wrap</h3>
+                    <p>Price: $10.99</p>
+                    <button onclick="addToCart(10)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 11 -->
+                <div class="product">
+                    <img src="./images/product11.jpg" alt="Product 11">
+                    <h3>Red Pashmina Shawl</h3>
+                    <p>Price: $35.99</p>
+                    <button onclick="addToCart(11)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 12 -->
+                <div class="product">
+                    <img src="./images/product12.jpg" alt="Product 12">
+                    <h3>Grey Pashmina Shawl</h3>
+                    <p>Price: $10.99</p>
+                    <button onclick="addToCart(12)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 13  -->
+                <div class="product">
+                    <img src="./images/product13.jpg" alt="Product 13">
+                    <h3>Artisanal Pashmina Shawl</h3>
+                    <p>Price: $45.99</p>
+                    <button onclick="addToCart(13)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 14 -->
+                <div class="product">
+                    <img src="./images/product14.jpg" alt="Product 14">
+                    <h3>Nepali Pashmina Shawl</h3>
+                    <p>Price: $49.99</p>
+                    <button onclick="addToCart(14)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 15 -->
+                <div class="product">
+                    <img src="./images/product15.jpg" alt="Product 15">
+                    <h3>Embroidered Pashmina Shawl</h3>
+                    <p>Price: $44.99</p>
+                    <button onclick="addToCart(15)">Add to Cart</button>
+                </div>
+    
+                <!-- Product 16 -->
+                <div class="product">
+                    <img src="./images/product16.jpg" alt="Product 16">
+                    <h3>Pashmina Cardigan Sweater </h3>
+                    <p>Price: $29.99</p>
+                    <button onclick="addToCart(16)">Add to Cart</button>
+                </div>
+            </div>
+    </main>
+
+    <div id="login-modal"></div>
+    <div id="signup-modal"></div>
+    <div id="cart-modal"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
