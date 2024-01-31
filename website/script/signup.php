@@ -21,8 +21,4 @@ $_SESSION["status"]=$register;
  
 //redirect to the template page
 header('Location: ../template/signup.php');
- 
-// //Accessing User Controller
-// $UserControllers= new $UserControllers();
-// $register= $UserControllers -> register($firstname, $lastname, $email, $password);
-// ?>
+  ?>
