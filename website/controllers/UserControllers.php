@@ -32,38 +32,6 @@ class UserControllers
         }
     }
 
-    // public function login($email, $password)
-    //     {
-    //         global $connection;
-
-    //             if ($_SERVER['REQUEST_METHOD']=="POST")
-    //         {
-    //         $email=$_POST['email'];
-    //         $password=$_POST['password'];
-    //             if (!empty($email) && !empty($password) && !is_numeric($email))
-    //             {
-    //             $sqlQuery = "SELECT * FROM users WHERE email ='$email' limit 1" ;
-    //             $result = mysqli_query($connection, $sqlQuery);
-
-    //             if($result){
-    //                     if($result && mysqli_num_rows($result) > 0){
-    //                         $user = mysqli_fetch_assoc($result);
-
-    //                             if($user['password'] == $password){
-    //                                 header("location: template/user.php");
-    //                                 die;
-
-    //                             }
-    //                     }
-    //             }
-    //             echo "<script type ='text/javascript'> alert ('***Wrong username or password***')</script>";
-    //             }
-    //             else{
-    //                 echo "<script type ='text/javascript'> alert ('***Wrong username or password***')</script>";
-    //             }
-    //         }
-    //     }
-
     public function login($email, $password)
     {
         global $connection;
