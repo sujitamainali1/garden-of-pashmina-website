@@ -4,13 +4,7 @@
 /* NAVBAR */
 #navbar {
 
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 10px; /* Adjust the gap between buttons as needed */
-    }
+    
 
     #navbar button {
         background-color: pink;
